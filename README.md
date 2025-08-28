@@ -10,7 +10,7 @@
 
 ## HTML
 
-1. [HTML básico y formato de contenido](/01_formato_texto/index.html)
+1. [Página web con elementos básicos](/01_elementos_basicos/index.html)
 
 
 |    Nombre     |    Apellido   |          Correo         |
