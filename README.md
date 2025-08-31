@@ -12,6 +12,7 @@
 
 1. [Página web con elementos básicos](/01_elementos_basicos/index.html)
 
+2. [Listas, multimedia y tablas](/02_listas_multimedia_tablas/index.html)
 
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
