@@ -14,6 +14,8 @@
 
 2. [Listas, multimedia y tablas](/02_listas_multimedia_tablas/index.html)
 
+3. [Formularios y metadatos](/03_formularios_metadatos/index.html)
+
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
 | Miguel Angel  |     Castro    | mcastro_23@alu.uabcs.mx |
