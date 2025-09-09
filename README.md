@@ -16,6 +16,10 @@
 
 3. [Formularios y metadatos](/03_formularios_metadatos/index.html)
 
+##CSS
+
+4. [Formato de texto, fuentes, fondos y border](/04_formato_texto_fuentes_fondos_borde/index.html)
+
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
 | Miguel Angel  |     Castro    | mcastro_23@alu.uabcs.mx |
