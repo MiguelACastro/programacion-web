@@ -1,0 +1,35 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+
+button {
+    background-color: #0076f4;
+    margin-left: 33%;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.tarjeta {
+    width: 30%;
+    height: auto;
+    margin: 30px;
+    border: 1px groove gainsboro;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.texto-tarjeta {
+    text-align: justify;
+    padding: 0px 20px 20px 20px;
+}
