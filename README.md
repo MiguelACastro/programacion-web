@@ -22,6 +22,8 @@
 
 5. [Tarjeta](/05_tarjeta/index.html)
 
+6. [Header Sticky](/06_header_sticky/index.html)
+
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
 | Miguel Angel  |     Castro    | mcastro_23@alu.uabcs.mx |
