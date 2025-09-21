@@ -1,0 +1,100 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+table {
+    border-style: groove;
+    border-width: 4px;
+    background-color: antiquewhite;
+}
+
+th, td {
+    border: none;
+}
+
+blockquote {
+    text-align: justify;
+    font-size: 1.2em;
+    background-color: antiquewhite;
+    border-left: 3px solid black;
+}
+
+nav {
+    background-image: url(../resources/nav-image.png);
+    background-size: cover;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+}
+
+footer {
+    background-image: url(../resources/pexels-francisco-fernandez-252432250-13442049.jpg);
+    background-size: cover;
+    color: beige;
+}
+
+
+.titulo-seccion-tabla {
+    background-color: olivedrab;
+}
+
+.titulo-taxon {
+    text-align: start;
+}
+
+#volver-inicio {
+    background-color: white;
+}
+
+/* Estilos para el formulario */
+form {
+    width: 30%;
+    padding: 24px;
+    
+    background-color: rgba(60, 59, 46, 0.8);
+}
+
+label::after {
+    content: ":";
+}
+
+input, textarea, select {
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 1px solid limegreen;
+    outline: 2px solid limegreen;
+}
+
+button {
+    width: 100%;
+    padding: 5px;
+
+    font-size: 18px;
+    color: white;
+
+    background-color: green;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;        
+    background-color: limegreen;
+    transition: all 0.5s ease-in-out;
+}
+

@@ -24,6 +24,8 @@
 
 6. [Header Sticky](/06_header_sticky/index.html)
 
+7. [Formulario con estilos, pseudoelementos y pseudoclases](/07_formulario_con_estilos/index.html)
+
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
 | Miguel Angel  |     Castro    | mcastro_23@alu.uabcs.mx |
