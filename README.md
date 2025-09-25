@@ -26,6 +26,8 @@
 
 7. [Formulario con estilos, pseudoelementos y pseudoclases](/07_formulario_con_estilos/index.html)
 
+8.[Sitio con tarjetas (Flex)](/08_sitio_tarjetas/index.html)
+
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
 | Miguel Angel  |     Castro    | mcastro_23@alu.uabcs.mx |
