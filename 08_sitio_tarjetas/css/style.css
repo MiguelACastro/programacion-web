@@ -26,11 +26,20 @@
     font-style: regular;
 }
 
+:root {
+    --primary-color: #1B246F;
+    --secondary-color: #0076f4;
+    --background-color: #E5E5E5;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --body-font: Lato, sans-serif;
+    --title-font: Ubuntu, sans-serif;
+}
+
 body {
-    font-family: Lato, sans-serif;
+    font-family: var(--body-font);
     padding: 0;
     margin: 0;
-    background-color: #E5E5E5;
+    background-color: var(--background-color);
     min-height: 200vh;
 }
 
@@ -43,14 +52,14 @@ header {
     margin: 0px;  
     position: sticky;
     top: 0;
-    background-color: #1B246F;
+    background-color: var(--primary-color);
     box-sizing: border-box;
 }
 
 .logo-container {
     display: inline-block;
     color: white;
-    font-family: Ubuntu, sans-serif;
+    font-family: var(--title-font);
     font-size: 38px;
 }
 
@@ -65,7 +74,7 @@ header {
     display: inline-block;
     width: 40%;
     padding: 5px;
-    background-color: #E5E5E5; 
+    background-color: var(--background-color); 
     border-radius: 20px;
 }
 
@@ -90,7 +99,7 @@ header {
 
 .action-container {
     display: inline-block;
-    font-size: 16px;
+    font-size:  16px;
 }
 
 .action-bar {
@@ -114,8 +123,8 @@ ul {
     z-index: 100;
     line-height: 1.5em;
     max-height: 0;
-    background-color: #1B246F;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 6px, rgba(0, 0, 0, 0.25) 0px 3px 6px;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow) 0px 3px 6px, var(--shadow) 0px 3px 6px;
     transition: max-height 0.7s ease-out;
 }
 
@@ -148,9 +157,9 @@ li:hover .submenu {
     align-items: center;
     width: 25%;
     height: auto;
-    margin: 30px;
+    margin: clamp(15px, 3%, 30px);
     border: 1px groove gainsboro;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 16px var(--shadow);
     border-radius: 15px;
 }
 
@@ -162,12 +171,12 @@ li:hover .submenu {
 
 .card-text {
     text-align: justify;
-    padding: 0px 20px 20px 20px;
+    padding: 0px clamp(10px, 2%, 20px) clamp(10px, 2%, 20px);
 }
 
 .card-button {
-    background-color: #0076f4;
-    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    padding: 12px 24px;
     font-size: 20px;
     color: white;
     border: none;
