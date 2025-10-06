@@ -30,6 +30,8 @@
 
 9. [Variables y funciones](/08_sitio_tarjetas/index.html)
 
+10. [Sitio responsivo](/08_sitio_tarjetas/index.html)
+
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
 | Miguel Angel  |     Castro    | mcastro_23@alu.uabcs.mx |

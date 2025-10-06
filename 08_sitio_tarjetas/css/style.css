@@ -60,18 +60,18 @@ header {
     display: inline-block;
     color: white;
     font-family: var(--title-font);
-    font-size: 38px;
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
 }
 
 .logo {
-    margin-right: 10px;
+    margin-right: 0.6rem;
     vertical-align: middle;
     height: 50px;
     width: 50px;
 }
 
 .search-bar {
-    display: inline-block;
+    display: flex;
     width: 40%;
     padding: 5px;
     background-color: var(--background-color); 
@@ -88,7 +88,6 @@ header {
    
 }
 
-
 .search-button {
     margin-left: 5px;
     padding: 0;
@@ -104,6 +103,8 @@ header {
 
 .action-bar {
     display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
 }
 
 ul {
@@ -137,12 +138,21 @@ li:hover .submenu {
     vertical-align: middle;
 }
 
-
-#search-icon {
-    width: 20px;
-    height: 20px;
+.menu-toggle {
+    display: none;
 }
 
+.menu-button {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    z-index: 100;
+}
+
+#search-icon {
+     max-width: 100%;
+     height: auto;
+}
 
 .container {
     display: flex;
@@ -157,7 +167,7 @@ li:hover .submenu {
     align-items: center;
     width: 25%;
     height: auto;
-    margin: clamp(15px, 3%, 30px);
+    margin: 1rem;
     border: 1px groove gainsboro;
     box-shadow: 8px 8px 16px var(--shadow);
     border-radius: 15px;
@@ -176,10 +186,65 @@ li:hover .submenu {
 
 .card-button {
     background-color: var(--secondary-color);
-    padding: 12px 24px;
-    font-size: 20px;
+    padding: 0.8rem 1.4rem;
+    font-size: 1.2rem;
     color: white;
     border: none;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 0.4rem;
+}
+
+@media (max-width: 768px) {
+    .logo-container span {
+        display: none;
+    }
+
+    .search-bar {
+        width: 60%;
+    }
+
+    .menu-button {
+        display: block;
+    }
+    
+    .action-bar {
+        flex-direction: column;
+    }
+
+    .action-container {
+        position: fixed;
+        background-color: rgba(27, 36, 111, 0.75);
+        backdrop-filter: blur(5px);
+        top: 0;
+        left: auto;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        z-index: 10;
+        padding-top: 60px;
+        transform: translateX(100%);
+        transition: all 750ms ease;
+    }
+
+    .menu-toggle:checked ~ .action-container{
+        transform: translateX(0%);
+        transition: all 750ms ease;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-button {
+        padding: 0.8em 0.5rem;
+        font-size: 1rem;
+    }
+
+    .card {
+        flex: 1 1 33%;
+    }
 }
