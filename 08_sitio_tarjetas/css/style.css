@@ -1,3 +1,4 @@
+/* ===== Fuentes ===== */
 @font-face {
     font-family: 'Ubuntu';
     src: url(../fonts/Ubuntu-Regular.ttf);
@@ -26,6 +27,8 @@
     font-style: regular;
 }
 
+
+/* ===== Variables ===== */
 :root {
     --primary-color: #1B246F;
     --secondary-color: #0076f4;
@@ -35,6 +38,8 @@
     --title-font: Ubuntu, sans-serif;
 }
 
+
+/* ===== General ===== */
 body {
     font-family: var(--body-font);
     padding: 0;
@@ -43,89 +48,117 @@ body {
     min-height: 200vh;
 }
 
+button, label {
+    cursor: pointer;
+}
+/* ===== Encabezado ===== */
 header {
+    position: sticky;
+    top: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 20px;  
-    margin: 0px;  
-    position: sticky;
-    top: 0;
+    margin: 0;  
+    padding: 1.25rem;
+
     background-color: var(--primary-color);
     box-sizing: border-box;
 }
 
+
+/* ===== Logo ===== */
 .logo-container {
     display: inline-block;
-    color: white;
+
     font-family: var(--title-font);
     font-size: clamp(1rem, 2.5vw, 2.5rem);
+    color: white;
 }
 
 .logo {
-    margin-right: 0.6rem;
     vertical-align: middle;
-    height: 50px;
     width: 50px;
+    height: 50px;
+    margin-right: 0.6rem;
 }
 
+/* ===== Barra de búsqueda ===== */
 .search-bar {
     display: flex;
     width: 40%;
-    padding: 5px;
+    padding: 0.3rem;
+
     background-color: var(--background-color); 
     border-radius: 20px;
 }
 
 .search-input {
     width: 90%;
-    padding: 8px;
-    border-radius: 20px;
+    padding: 0.5rem;
     border: none;
-    outline: none;
+    
     font-size: 16px;
-   
+    outline: none;
+
+    border-radius: 20px;
 }
 
 .search-button {
-    margin-left: 5px;
-    padding: 0;
-    background: none;
-    border: none;
     vertical-align: middle;
+    padding: 0;
+    margin-left: 0.3rem;
+    border: none;
+
+    background: none;
 }
 
+#search-icon {
+     max-width: 100%;
+     height: auto;
+}
+
+
+/* ===== Nav de acciones ===== */
 .action-container {
     display: inline-block;
-    font-size:  16px;
+    font-size: 1rem;
 }
 
 .action-bar {
     display: flex;
     justify-content: space-between;
     gap: 0.8rem;
-}
 
-ul {
     list-style: none;
 }
 
-.action {
+
+.action-item {
     text-decoration: none;
     color: white;
 }
 
+.action-icon {
+    vertical-align: middle;
+}
+
+/* ===== Submenú ===== */
 .submenu {
-    display:block;
-    padding: 0 20px;
-    overflow: hidden;
     position: absolute;
     z-index: 100;
-    line-height: 1.5em;
+
+    display:block;
+    overflow: hidden;
     max-height: 0;
+    padding: 0 20px;
+    line-height: 1.5;
+
     background-color: var(--primary-color);
     box-shadow: var(--shadow) 0px 3px 6px, var(--shadow) 0px 3px 6px;
+    list-style: none;
+
     transition: max-height 0.7s ease-out;
 }
 
@@ -134,41 +167,38 @@ li:hover .submenu {
     transition: max-height 0.7s ease-in;
 }
 
-.action, .action-icon {
-    vertical-align: middle;
-}
-
+/* ===== Botón de hamburguesa ===== */
 .menu-toggle {
     display: none;
 }
 
 .menu-button {
     display: none;
+    z-index: 100;
+
     color: white;
     font-size: 2rem;
-    z-index: 100;
 }
 
-#search-icon {
-     max-width: 100%;
-     height: auto;
-}
 
+/* ===== Contenedor principal ===== */
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-
+/* ===== Tarjetas ===== */
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 25%;
     height: auto;
     margin: 1rem;
     border: 1px groove gainsboro;
+    
     box-shadow: 8px 8px 16px var(--shadow);
     border-radius: 15px;
 }
@@ -180,20 +210,23 @@ li:hover .submenu {
 }
 
 .card-text {
+    padding: 0px clamp(10px, 2%, 20px);
     text-align: justify;
-    padding: 0px clamp(10px, 2%, 20px) clamp(10px, 2%, 20px);
 }
 
 .card-button {
-    background-color: var(--secondary-color);
+    margin: 0.4rem;
     padding: 0.8rem 1.4rem;
+    border: none;
+    
     font-size: 1.2rem;
     color: white;
-    border: none;
+    
+    background-color: var(--secondary-color);
     border-radius: 10px;
-    margin: 0.4rem;
 }
 
+/* ===== Responsividad para dispositvios móviles===== */
 @media (max-width: 768px) {
     .logo-container span {
         display: none;
@@ -213,38 +246,40 @@ li:hover .submenu {
 
     .action-container {
         position: fixed;
-        background-color: rgba(27, 36, 111, 0.75);
-        backdrop-filter: blur(5px);
         top: 0;
-        left: auto;
         right: 0;
+        left: auto;
+        z-index: 10;
+        
         width: 200px;
         height: 100%;
-        z-index: 10;
         padding-top: 60px;
+        
+        background-color: rgba(27, 36, 111, 0.75);
+        backdrop-filter: blur(5px);
         transform: translateX(100%);
-        transition: all 750ms ease;
+        transition: all 0.75s ease;
     }
 
     .menu-toggle:checked ~ .action-container{
-        transform: translateX(0%);
-        transition: all 750ms ease;
+        transform: translateX(0);
+        transition: all 0.75s ease;
     }
     
-    .card-text {
-        font-size: 1rem;
+    .card {
+        flex: 1 1 33%;
     }
 
     .card-title {
         font-size: 1.2rem;
     }
 
-    .card-button {
-        padding: 0.8em 0.5rem;
+    .card-text {
         font-size: 1rem;
     }
 
-    .card {
-        flex: 1 1 33%;
+    .card-button {
+        padding: 0.8em 0.5rem;
+        font-size: 1rem;
     }
 }
