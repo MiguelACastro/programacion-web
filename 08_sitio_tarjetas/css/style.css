@@ -392,7 +392,36 @@ form {
 
 form:focus-within {
     outline: solid 1px var(--secondary-color);
+
 }
+
+/* ===== Footer ===== */
+footer {
+    padding: 2rem 20%;
+}
+
+.link-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.link-category > ul {
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 /* ===== Responsividad para dispositvios móviles===== */
 @media (max-width: 768px) {
     .logo-container span {
@@ -486,5 +515,17 @@ form:focus-within {
         
     form {
         width: 100%;
+    }
+
+    footer {
+        padding: 2rem 15%;
+    }
+
+    .link-category-name {
+        font-size: 1rem;
+    }
+
+    .link {
+        font-size: 0.8rem;
     }
 }
