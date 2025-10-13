@@ -1,30 +1,33 @@
 @import "tailwindcss" prefix(tw);
-@plugin "daisyui";
+@plugin "daisyui" {
+    themes: light --default;
+    
+};
 /* ===== Fuentes ===== */
 @font-face {
     font-family: 'Ubuntu';
-    src: url(../../public/fonts/Ubuntu-Regular.ttf);
+    src: url(fonts/Ubuntu-Regular.ttf);
     font-weight: normal;
     font-style: regular;
 }
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url(../../public/fonts/Ubuntu-Bold.ttf);
+    src: url(fonts/Ubuntu-Bold.ttf);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url(../../public/fonts/Lato-Regular.ttf);
+    src: url(fonts/Lato-Regular.ttf);
     font-weight: normal;
     font-style: regular;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url(../../public/fonts/Lato-Bold.ttf);
+    src: url(fonts/Lato-Bold.ttf);
     font-weight: bold;
     font-style: regular;
 }
@@ -81,6 +84,7 @@ header {
 }
 
 .logo {
+    display: inline;
     vertical-align: middle;
     width: 50px;
     height: 50px;
@@ -104,7 +108,7 @@ header {
     
     font-size: 16px;
     outline: none;
-
+    background-color: white;
     border-radius: 20px;
 }
 
@@ -118,8 +122,8 @@ header {
 }
 
 #search-icon {
-     max-width: 100%;
-     height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -144,6 +148,7 @@ header {
 }
 
 .action-icon {
+    display: inline;
     vertical-align: middle;
 }
 
@@ -254,7 +259,7 @@ li:hover .submenu {
     text-align: justify;
     height: 75vh;
 
-    background-image: url(../../public/resources/hero-thinkpad-x1-desktop\ 1.png);
+    background-image: url(resources/hero-thinkpad-x1-desktop\ 1.png);
     background-color: grey;
     background-blend-mode: multiply;
     background-size: cover;
@@ -300,6 +305,7 @@ li:hover .submenu {
 }
 
 .section-title {
+    font-size: 2rem;
     margin: 4rem 6% 2rem;
 }
 
@@ -322,6 +328,10 @@ li:hover .submenu {
     width: 100%;
     height: auto;
     border-radius: 15px 15px 0 0;
+}
+
+.card-title {
+    font-size: 1.5rem;
 }
 
 .card-text {
@@ -354,7 +364,7 @@ li:hover .submenu {
     justify-content: space-between;
     align-items: center;
     padding: 4% 8%;
-    height: 10vh;
+    height: max-content;
 
     background-color: var(--primary-color);
 }
@@ -376,16 +386,15 @@ li:hover .submenu {
 form {
     display:flex;
     width: 60%;
-    height: 60%;
 }
 
 .email-input {
     flex-grow: 2;
     border: none;
     padding: 0 0.5rem;
-
     font-size: 1.2rem;
-
+    
+    background-color: white;
     border-radius: 10px 0 0 10px;
 }
 
@@ -519,8 +528,9 @@ footer {
     }
 
     .newsletter {
-        height: 20vh;
+        height: max-content;
         flex-direction: column;
+        gap: 1.5rem;
     }
 
     .submit-button {
