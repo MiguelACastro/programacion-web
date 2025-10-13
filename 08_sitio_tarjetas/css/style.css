@@ -294,6 +294,11 @@ li:hover .submenu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    margin: 4rem 6% 2rem;
 }
 
 /* ===== Tarjetas ===== */
@@ -332,6 +337,13 @@ li:hover .submenu {
     
     background-color: var(--secondary-color);
     border-radius: 10px;
+}
+
+.content-image {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 1.5rem auto;
 }
 
 /* ===== Suscribirse al newsletter ===== */
