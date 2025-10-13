@@ -334,6 +334,65 @@ li:hover .submenu {
     border-radius: 10px;
 }
 
+/* ===== Suscribirse al newsletter ===== */
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 8%;
+    height: 10vh;
+
+    background-color: var(--primary-color);
+}
+
+.newsletter-title, .newsletter-text {
+    color: white;
+}
+
+.newsletter-title {
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+}
+
+.newsletter-text {
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+form {
+    display:flex;
+    width: 60%;
+    height: 60%;
+}
+
+.email-input {
+    flex-grow: 2;
+    border: none;
+    padding: 0 0.5rem;
+
+    font-size: 1.2rem;
+
+    border-radius: 10px 0 0 10px;
+}
+
+.submit-button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    
+    font-size: 1.2rem;
+    color: white;
+    
+    background-color: var(--secondary-color);
+    border-radius: 0 10px 10px 0;
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+form:focus-within {
+    outline: solid 1px var(--secondary-color);
+}
 /* ===== Responsividad para dispositvios móviles===== */
 @media (max-width: 768px) {
     .logo-container span {
@@ -414,5 +473,18 @@ li:hover .submenu {
     .card-button {
         padding: 0.8em 0.5rem;
         font-size: 1rem;
+    }
+
+    .newsletter {
+        height: 20vh;
+        flex-direction: column;
+    }
+
+    .submit-button {
+        font-size: 0.8rem;
+    }
+        
+    form {
+        width: 100%;
     }
 }
