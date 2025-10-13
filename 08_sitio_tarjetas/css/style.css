@@ -245,6 +245,50 @@ li:hover .submenu {
     user-select: none;
 }
 
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    height: 75vh;
+
+    background-image: url(../resources/hero-thinkpad-x1-desktop\ 1.png);
+    background-color: grey;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero-content {
+    padding: 0 1.2rem;
+    color: white;
+}
+
+.hero-title {
+    margin-bottom: 1.2rem;
+
+    font-family: var(--title-font);
+    font-size: 3rem;
+}
+
+.hero-text {
+    width: 40%;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.hero-button {
+    padding: 0.8rem 1.4rem;
+    border: none;
+    
+    font-size: 1.2rem;
+    color: white;
+    
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
 /* ===== Contenedor principal ===== */
 .container {
     display: flex;
@@ -344,6 +388,15 @@ li:hover .submenu {
 
     .more-categories {
         display: block;
+    }
+
+    .hero {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
     }
 
     .card {
