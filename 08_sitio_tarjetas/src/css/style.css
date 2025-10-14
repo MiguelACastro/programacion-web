@@ -3,6 +3,12 @@
     themes: light --default;
     
 };
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+}
 /* ===== Fuentes ===== */
 @font-face {
     font-family: 'Ubuntu';
@@ -59,6 +65,7 @@ button, label {
 /* ===== Encabezado ===== */
 header {
     position: sticky;
+    z-index: 100;
     top: 0;
 }
 
@@ -423,26 +430,20 @@ footer {
     padding: 2rem 20%;
 }
 
-.link-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.link-category > ul {
-    padding: 0;
-    list-style: none;
-}
-
-.link {
-    color: black;
-    margin-bottom: 1rem;
-}
-
 .socials {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.descripcion > p {
+    margin-bottom: 1rem;
+}
+
+.descripcion > p,
+.descripcion > h3,
+.descripcion > ul {
+    font-size: 1rem;
 }
 
 /* ===== Responsividad para dispositvios móviles===== */
@@ -472,7 +473,7 @@ footer {
         
         width: 200px;
         height: 100%;
-        padding-top: 60px;
+        padding: 6rem 1.5rem;
         
         background-color: rgba(27, 36, 111, 0.75);
         backdrop-filter: blur(5px);
@@ -543,13 +544,5 @@ footer {
 
     footer {
         padding: 2rem 15%;
-    }
-
-    .link-category-name {
-        font-size: 1rem;
-    }
-
-    .link {
-        font-size: 0.8rem;
     }
 }

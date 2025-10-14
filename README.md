@@ -26,11 +26,13 @@
 
 7. [Formulario con estilos, pseudoelementos y pseudoclases](/07_formulario_con_estilos/index.html)
 
-8. [Sitio con tarjetas (Flex)](/08_sitio_tarjetas/index.html)
+8. [Sitio con tarjetas (Flex)](/08_sitio_tarjetas/public/index.html)
 
-9. [Variables y funciones](/08_sitio_tarjetas/index.html)
+9. [Variables y funciones](/08_sitio_tarjetas/public/index.html)
 
-10. [Sitio responsivo](/08_sitio_tarjetas/index.html)
+10. [Sitio responsivo](/08_sitio_tarjetas/public/index.html)
+
+11. [Examen - Sitio Web](/08_sitio_tarjetas/public/index.html)
 
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
