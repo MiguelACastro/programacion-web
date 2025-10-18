@@ -38,6 +38,8 @@
 
 12. [Calculadora](/09_calculadora/index.html)
 
+13. [Manipulación de estilos](/10_manipulacion_estilos/index.html)
+
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
 | Miguel Angel  |     Castro    | mcastro_23@alu.uabcs.mx |

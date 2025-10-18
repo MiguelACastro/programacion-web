@@ -1,0 +1,53 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.6rem;
+    padding: 1.8rem;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+
+    font-size: 1.5rem;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.red-btn {
+    background-color: red;
+}
+
+.green-btn {
+    background-color: green;
+}
+
+.blue-btn {
+    background-color: blue;
+}
+
+.reset-btn {
+    color: black;
+    background-color: gainsboro;
+}
