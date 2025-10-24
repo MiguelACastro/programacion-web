@@ -1,0 +1,61 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+}
+
+.calculator {
+    align-self: center;
+    padding: 1.2rem;
+    background-color: lightgray;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 30px;
+    padding: 0.4rem;
+    background-color: whitesmoke;
+}
+
+.buttons {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 1rem;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.operator,
+.equal {
+    background-color: #007bff;
+    color: white;
+}
+
+
+.clear {
+    background-color: red;
+    color: white;
+}
+
+.history-container {
+    height: 500px;
+}
+.history {
+    max-height: 400px;
+    overflow: auto;
+}
+
+@media (max-width: 768px){
+    body, html {
+        flex-direction: column;
+    }
+}
