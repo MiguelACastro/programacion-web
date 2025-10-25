@@ -41,6 +41,9 @@
 13. [Manipulación de estilos](/10_manipulacion_estilos/index.html)
 
 14. [Calculadora visual](/11_calculadora_visual/index.html)
+
+15. [Lista de tareas](/12_lista_tareas/public/index.html)
+
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
 | Miguel Angel  |     Castro    | mcastro_23@alu.uabcs.mx |
