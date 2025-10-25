@@ -3,3 +3,8 @@
     themes: light --default;
     
 };
+
+html, body {
+    @apply bg-base-300;
+    height: 100%;
+}
