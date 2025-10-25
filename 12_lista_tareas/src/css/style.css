@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default;
+    
+};
+
+html, body {
+    @apply bg-base-300;
+    height: 100%;
+}
+
+.task-container {
+    scrollbar-color: var(--color-primary) var(--color-base-200);
+}
+
+.task {
+    @apply flex items-center gap-4 px-2 py-4 mb-4 text-xs border-solid rounded-2xl border-2 border-gray-500;
+}
+
+.task-text {
+    @apply grow text-xs md:text-sm font-medium;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.completed {
+    @apply font-light line-through;
+}
+
+.delete-btn {
+    @apply btn btn-sm btn-outline btn-circle btn-error;
+}
