@@ -16,3 +16,7 @@ html, body {
 .task {
     @apply px-2 py-4 mb-4 text-xs md:text-sm text-wrap font-medium border-solid rounded-2xl border-2 border-gray-500;
 }
+
+.completed {
+    @apply font-light line-through;
+}
