@@ -46,6 +46,8 @@
 
 16. Modules
 
+17. [Tarjeta con datos base de un gato](/13_galeria_gatos/index.html);
+
 |    Nombre     |    Apellido   |          Correo         |
 |:-------------:|:-------------:|:-----------------------:|
 | Miguel Angel  |     Castro    | mcastro_23@alu.uabcs.mx |

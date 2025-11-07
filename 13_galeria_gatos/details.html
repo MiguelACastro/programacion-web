@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script type="module">
+        import { showBreed, showError } from "./js/ui.js";
+        import { getBreedDetails } from "./js/api.js";
+
+        async function loadBreed(id) {
+            if(id != "undefined") {
+                const breed = await getBreedDetails(id);
+                showBreed(breed);
+            } else {
+                showError();
+                console.error("Info not found");
+            }
+        }
+
+        const breedId = new URLSearchParams(window.location.search).get('id');
+        window.addEventListener("DOMContentLoaded", () => loadBreed(breedId));
+    </script>
+</body>
+</html>
